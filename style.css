@@ -4,8 +4,14 @@ header {
   font-family: Vazir, sans-serif;
   font-size: 20px;
 }
+i {
+  font-family: none;
+}
 p {
   text-align: justify;
+}
+body{
+  overflow-x: hidden;
 }
 .headerPic {
   width: 100%;
@@ -33,4 +39,19 @@ p {
   -webkit-box-shadow: 10px 3px 36px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 3px 36px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 3px 36px 0px rgba(0, 0, 0, 0.75);
+}
+.myparent {
+  overflow: hidden;
+}
+.myproduct {
+  position: relative;
+}
+.rightButton i {
+  font-size: 40px;
+  padding: 5px 8px;
+  color: orange;
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  
 }

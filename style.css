@@ -1,57 +1,156 @@
-@import url("https://fonts.cdnfonts.com/css/lalezar");
-@import url("https://v1.fontapi.ir/css/Vazir");
-header {
-  font-family: Vazir, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #1e1f1e;
+  color: white;
+}
+.navUp {
+  width: 100%;
+  background-color: #a850ab;
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navDown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  font-weight: bold;
+}
+.brand {
   font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
-i {
-  font-family: none;
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
-p {
-  text-align: justify;
+.menu ul li {
+  margin: 0 10px;
 }
-body{
-  overflow-x: hidden;
+.menu ul li:hover {
+  color: aqua;
+  cursor: pointer;
 }
-.headerPic {
-  width: 100%;
+.icons {
+  margin: 0 10px;
 }
-.lalezar {
-  font-family: Lalezar, sans-serif;
+.icons i {
+  margin: 0 20px;
+  font-size: 18px;
+  cursor: pointer;
 }
-.vazir {
-  font-family: Vazir, sans-serif;
+.icons i:hover {
+  color: lightblue;
 }
-.textHeight {
-  line-height: 30px;
+.hamMenu {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0 10px;
 }
-.comBackImage {
-  background: linear-gradient(rgba(0, 0, 0, 0.642), rgba(0, 0, 0, 0.615)),
-    url("./assets/imgae/pic1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 400px;
-  font-family: Vazir, sans-serif;
+.hamMenu:hover {
+  color: aqua;
 }
-.card {
-  -webkit-box-shadow: 10px 3px 36px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 3px 36px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 3px 36px 0px rgba(0, 0, 0, 0.75);
-}
-.myparent {
-  overflow: hidden;
-}
-.myproduct {
-  position: relative;
-}
-.rightButton i {
-  font-size: 40px;
-  padding: 5px 8px;
-  color: orange;
+.sideMenu {
+  background-color: rgb(20, 19, 19);
+  width: 40%;
+  height: 80vh;
+  border-radius: 10px;
   position: absolute;
-  bottom: 45%;
-  left: 0;
-  
+  left: -1000px;
+  transition: left 0.3s ease-in-out;
+}
+.sideMenu .listSideMenu ul {
+  list-style-type: none;
+  padding: 10px;
+}
+.sideMenu .listSideMenu ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid aqua;
+}
+.socialMedia a {
+  text-decoration: none;
+  color: white;
+  margin: 0 4px;
+}
+.socialMedia a:hover {
+  color: aqua;
+}
+.carousel-item img {
+  height: 550px;
+  width: 100%;
+}
+.slidePhotoes {
+  display: flex;
+  align-items: center;
+  background-color: #343734;
+  text-align: center;
+}
+.slidePhotoes .divleft {
+  width: 50%;
+  opacity: 0.5;
+}
+.slidePhotoes .divRight {
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+/* media for nav */
+@media screen and (max-width: 768px) {
+  #phoneNumber {
+    margin: auto;
+  }
+}
+/* products */
+.seeAll {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.seeAll:hover {
+  color: aqua;
+  cursor: pointer;
+}
+/* card slider */
+.slider {
+  width: 100%; /* Adjust the width to accommodate the cards properly */
+  display: flex;
+  align-items: center;
+}
+.Card{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 300px;
+  margin: 0 10px;
+}
+.Card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.Card .content {
+  padding: 10px;
+  color: #343734;
+}
+
+.Card .content h5 {
+  color: rgb(0, 130, 0);
 }

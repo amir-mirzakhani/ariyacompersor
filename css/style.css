@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 nav {
   background-color: #1e1f1e;
   color: white;
@@ -127,30 +130,81 @@ nav {
   color: aqua;
   cursor: pointer;
 }
+.productsSlider {
+  background-color: #343734;
+}
 /* card slider */
 .slider {
-  width: 100%; /* Adjust the width to accommodate the cards properly */
+  direction: ltr;
+}
+.box {
+  width: 300px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  direction: rtl;
+}
+
+.image {
+  padding: 5px; /* Added padding for image separation */
+}
+
+.image img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 0 10px 10px;
+}
+.content {
+  color: white;
+  font-weight: bold;
+  padding: 10px 0px;
+  font-size: 20px;
+}
+.namePrdouct {
+  text-align: start;
+  padding: 0 10px;
+}
+.content p {
+  margin-right: auto;
+}
+.buy {
   display: flex;
   align-items: center;
+  justify-content: end;
+  color: rgb(250, 250, 250);
+  font-weight: bold;
+  padding: 0 10px;
 }
-.Card{
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 300px;
-  margin: 0 10px;
+
+.buy span {
+  color: grey;
+  font-size: 10px;
 }
-.Card img {
+
+.price {
+  margin: 10px 8px;
+}
+.addTo {
   width: 100%;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  padding: 5px 8px;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
 }
 
-.Card .content {
-  padding: 10px;
-  color: #343734;
+.addTo:hover {
+  color: black;
+  background-color: rgb(215, 16, 16);
 }
 
-.Card .content h5 {
-  color: rgb(0, 130, 0);
+.addTo a {
+  color: black;
+  font-weight: bold;
+}
+/* Optional: Media query for smaller screens */
+@media (max-width: 768px) {
+  .box {
+    width: 250px; /* Adjust width for smaller screens */
+  }
 }

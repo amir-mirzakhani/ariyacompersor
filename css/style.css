@@ -192,12 +192,10 @@ nav {
   text-align: center;
   color: black;
 }
-
 .addTo:hover {
-  color: black;
+  color: white;
   background-color: rgb(215, 16, 16);
 }
-
 .addTo a {
   color: black;
   font-weight: bold;
@@ -207,4 +205,19 @@ nav {
   .box {
     width: 250px; /* Adjust width for smaller screens */
   }
+}
+/* about us little */
+/* poster section */
+.poster {
+  margin-top: 100px;
+  background-color: rgb(24, 21, 34);
+  padding: 50px;
+}
+.posterText {
+  color: white;
+  line-height: 40px;
+}
+.posterHeading {
+  border-bottom: 5px solid rgba(194, 23, 23, 0.687);
+  display: inline;
 }

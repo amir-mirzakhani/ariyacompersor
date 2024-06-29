@@ -14,11 +14,11 @@ for (const priceElement of prices) {
 
 // light slider js code
 $(document).ready(function () {
-  $("#autoWidth").lightSlider({
+  $(".autoWidth").lightSlider({
     autoWidth: true,
     loop: true,
     onSliderLoad: function () {
-      $("#autoWidth").removeClass("cS-hidden");
+      $(".autoWidth").removeClass("cS-hidden");
     },
   });
 });

@@ -1,7 +1,12 @@
+@font-face {
+  font-family: "IranYekan";
+  src: url("../assets/fonts/iranyekan/Qs_Iranyekan.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: IranYekan;
 }
 a {
   text-decoration: none;
@@ -220,4 +225,35 @@ nav {
 .posterHeading {
   border-bottom: 5px solid rgba(194, 23, 23, 0.687);
   display: inline;
+}
+/* footer */
+
+.iconimg {
+  margin: 10px auto;
+  text-align: center;
+  padding: 20px;
+}
+.iconimg img {
+  width: 200px;
+  height: 100px;
+}
+.about {
+  direction: rtl;
+  padding: 5px;
+}
+.about ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 5px;
+}
+.about ul li {
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(245, 4, 4);
+  margin: 0 10px;
+  padding: 10px;
+}
+.allRolls {
+  padding: 15px 0;
+  border-top: 2px solid rgb(215, 16, 16);
+  font-size: 17px;
 }

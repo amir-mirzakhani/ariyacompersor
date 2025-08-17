@@ -1,20 +1,3 @@
-@font-face {
-  font-family: "IranYekan";
-  src: url("../assets/fonts/iranyekan/Qs_Iranyekan.ttf");
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: IranYekan;
-}
-a {
-  text-decoration: none;
-}
-nav {
-  background-color: #1e1f1e;
-  color: white;
-}
 .navUp {
   width: 100%;
   background-color: #a850ab;
